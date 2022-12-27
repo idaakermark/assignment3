@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body {
+    background-color: #3A506B;
+}
+
+h1 {
+    color: #FFFFFF;
+}
+
+.wrapper {
+    background-color: #E8F0FF;
+    border-radius: 0.5em;
+    box-sizing: content-box;
+    box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
+    left: 50%;
+    padding: 2.5em 3em;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 26.87em;
+}
+
+.game-container {
+    display: grid;
+    gap: 0.6em;
+    position: relative;
+    width: 100%;
+}
+
+.stats-container {
+    margin-bottom: 1.2em;
+    text-align: right;
+}
+
+.stats-container span {
+    font-weight: 600;
+}
+
+.card-container {
+    cursor: pointer;
+    height: 6.25em;
+    padding-top: 10px;
+    position: relative;
+    width: 6.25em;
+}
+
+.card-before,
+.card-after {
+    align-items: center;
+    backface-visibility: hidden;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    transition: transform 0.7s ease-out;
+    width: 100%;
+}
+
+.card-before {
+    background-color: #F7ACCF;
+    font-size: 2.8em;
+    font-weight: 600;
+}
+
+.card-after {
+    background-color: #FFFFFF;
+    transform: rotateY(180deg);
+}
+
+.card-container.flipped .card-before {
+    transform: rotateY(180deg);
+
+}
+
+.card-container.flipped .card-after {
+    transform: rotateY(0deg);
+}
+
+.controls-container {
+    align-items: center;
+    background-color: #3A506B;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+button {
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    padding: 1em 1.5em;
+}
+
+#stop {
+    background-color: #000000;
+    color: #FFFFFF;
+    display: block;
+    font-size: 1.1em;
+    margin: 1.1em auto 0 auto;
+}
+
+.controls-container button {
+    box-shadow: 0 0.6em 2em rgba(77, 75, 70, 0.2);
+    font-size: 1.3em;
+}
+
+.hide {
+    display: none;
+}
+
+.image {
+    height: 80px;
+}
+
+#result {
+    text-align: center;
+}
+
+#result h2 {
+    font-size: 2.5em;
+}
+
+#result h4 {
+    font-size: 1.8em;
+    margin: 0.6em 0 1em 0;
+}
+
+@media only screen and (max-width: 375px) {
+    .wrapper {
+        background-color: #E8F0FF;
+        border-radius: 0.5em;
+        box-sizing: content-box;
+        margin: 30% 20%;
+        padding: 2.5em 3em;
+        position: absolute;
+    }
+    .controls-container {
+        height: 200%;
+        width: 200%;
+    }
+}
+

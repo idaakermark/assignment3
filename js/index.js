@@ -12,16 +12,16 @@ let firstCard = false;
 let secondCard = false; 
 
 const items = [
-{ name: "avocado", image: "../images/avocado.png" },
-{ name: "butterfly", image: "../images/butterfly.png" },
-{ name: "fish", image: "../images/fish.png" },
-{ name: "hand", image: "../images/hand.png" },
-{ name: "ice-cream", image: "../images/ice-cream.png" },
-{ name: "pizza", image: "../images/pizza.png" },
-{ name: "popcorn", image: "../images/popcorn.png" },
-{ name: "teddy-bear", image: "../images/teddy-bear.png" },
-{ name: "tiger", image: "../images/tiger.png" },
-{ name: "whale", image: "../images/whale.png" }
+{ name: "avocado", image: "../assignment3/images/avocado.png" },
+{ name: "butterfly", image: "../assignment3/images/butterfly.png" },
+{ name: "fish", image: "../assignment3/images/fish.png" },
+{ name: "hand", image: "../assignment3/images/hand.png" },
+{ name: "ice-cream", image: "../assignment3/images/ice-cream.png" },
+{ name: "pizza", image: "../assignment3/images/pizza.png" },
+{ name: "popcorn", image: "../assignment3/images/popcorn.png" },
+{ name: "teddy-bear", image: "../assignment3/images/teddy-bear.png" },
+{ name: "tiger", image: "../assignment3/images/tiger.png" },
+{ name: "whale", image: "../assignment3/images/whale.png" }
 ];
 
 let seconds = 0,
